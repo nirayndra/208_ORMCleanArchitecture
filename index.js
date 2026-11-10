@@ -7,7 +7,7 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', require('./routes/komikRoutes'));
+app.use('/api', require('./routes/api'));
 
 async function startServer() {
     await connectDatabase();
